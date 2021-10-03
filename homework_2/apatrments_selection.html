@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подбор квартир</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Подбор квартир</h1>
+            <div>
+                <label for="location">Метро, улица или район</label>
+                <input id="location" type="text" list="location_list" autofocus>
+                <datalist id="location_list">
+                    <option value="Парк победы">
+                    <option value="Московская">
+                    <option value="Чкаловская">
+                    <option value="Нарвская">
+                    <option value="Московский район">
+                    <option value="Петроградский район">
+                    <option value="Адмиралтейский район">
+                    <option value="ул. Варшавская">
+                    <option value="ул. Ленсовета">
+                    <option value="ул. Ропшинская">
+                    <option value="Нарвский пр.">
+                </datalist>
+            </div>
+            <div>
+                <label for="rooms_number">Кол-во комнат</label>
+                <select id="rooms_number">
+                    <option value="rooms_number_1">1</option>
+                    <option value="rooms_number_2">2</option>
+                    <option value="rooms_number_3">3</option>
+                    <option value="rooms_number_4">4</option>
+                    <option value="rooms_number_5">5</option>
+                </select>
+            </div>
+            <div>
+                <label for="year">Год сдачи</label>
+                <select id="year">
+                    <option value="year_2019">2019</option>
+                    <option value="year_2020">2020</option>
+                    <option value="year_2021">2021</option>
+                    <option value="year_2022">2022</option>
+                    <option value="year_2023">2023</option>
+                    <option value="year_2024">2024</option>
+                </select>
+            </div>
+            <div>
+                <label for="max_price">Максимальная стоимость, руб.</label>
+                <input id="max_price" type="number" name="max_price" min="900000" max="10000000" step="1000">
+            </div>
+            <div>
+                <label for="max_size">Максимальная площадь, м<sup>2</sup></label>
+                <input id="max_size" type="number" name="max_size" min="37" max="120" step="1">
+            </div>
+            <div>
+                <label>Наличие отделки:</label>
+                <label>
+                    есть
+                    <input type="radio" value="yes" name="finishing">
+                </label>
+                <label>
+                    нет
+                    <input type="radio" value="no" name="finishing" checked>
+                </label>
+            </div>
+        <div>
+            <label>Наличие терассы:</label>
+            <label>
+                есть
+                <input type="radio" value="yes" name="terrace">
+            </label>
+            <label>
+                нет
+                <input type="radio" value="no" name="terrace" checked>
+            </label>
+        </div>
+        <div>
+            <label>Класс:</label>
+            <label>
+                бизнесс-класс
+                <input type="checkbox" value="business_class" name="apartments_class[]">
+            </label>
+            <label>
+                преимум
+                <input type="checkbox" value="premium_class" name="apartments_class[]">
+            </label>
+            <label>
+                deluxe
+                <input type="checkbox" value="deluxe_class" name="apartments_class[]">
+            </label>
+        </div>
+        <div>
+            <label for="floor_number">Этаж</label>
+            <select id="floor_number">
+                <option value="floor_not_first">Не первый</option>
+                <option value="floor_not_last">Не последний</option>
+                <option value="floor_1">1</option>
+                <option value="floor_2">2</option>
+                <option value="floor_3">3</option>
+                <option value="floor_4">4</option>
+                <option value="floor_5">5</option>
+                <option value="floor_6">6</option>
+                <option value="floor_7">7</option>
+                <option value="floor_8">8</option>
+                <option value="floor_9">9</option>
+                <option value="floor_10">10</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Подобрать">
+        </div>
+
+    </form>
+
+
+</body>
+</html>
