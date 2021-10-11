@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+    padding: 10px 60px;
+    text-align: center;
+}
+
+.active {
+    background-color: mediumvioletred;
+}
+
+.column {
+    flex-direction: column;
+}
